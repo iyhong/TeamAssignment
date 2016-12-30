@@ -1,6 +1,6 @@
 package forTest.no01;
 
-public class question01_choiym {
+public class Question01_choiym {
 
 	public static void main(String[] args){
 		String b = "*";
