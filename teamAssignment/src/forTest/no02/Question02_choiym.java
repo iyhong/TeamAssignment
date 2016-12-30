@@ -1,6 +1,6 @@
 package forTest.no02;
 
-public class question02_choiym {
+public class Question02_choiym {
 
 	public static void main(String[] args) {
 	for(int a =5 ; a >0; a--){
