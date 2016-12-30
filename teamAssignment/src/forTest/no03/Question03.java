@@ -1,6 +1,6 @@
 package forTest.no03;
 
-public class question03 {
+public class Question03 {
 
 	/*
 	 

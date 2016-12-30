@@ -1,6 +1,6 @@
 package forTest.no04;
 
-public class question04 {
+public class Question04 {
 
 	/*
 4번 아래그림 그리기	
