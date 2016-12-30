@@ -3,8 +3,7 @@ package forTest.no01;
 public class question01 {
 /*
  * 
-¾Æ·¡±×¸² ±×¸®±â
-1¹ø¹®Á¦
+1ë²ˆ.
 *
 **
 ***
