@@ -8,7 +8,11 @@ public class Question04_myungchul {
 			for (y = 0; y < x + 1; y++) {
 				// y은 0이고; y은 x+1보다 작다. ; y는 증가한다.
 				// y<x+1 x에 0~4까지 대입을 하게 되고 점점 출력할 문자열이 증가한다.
-				System.out.print(y + 1 + " ");
+				System.out.print(y + 1);
+				if(y<x){
+					System.out.print(" ");
+				}
+				
 				// 화면에 출력되는 방식은 3번예제랑 똑같다.
 				// x+1을 넣을 경우
 				// 첫번째 for에서 x를 1번 반복하게 되고 두번째 for문에서는 y를2번 반복하게 되므로
@@ -21,6 +25,7 @@ public class Question04_myungchul {
 				// 1 2 3				
 				// 이런한 모양이 나온다.
 			}
+			
 			System.out.print("\n");// x가 0~4 한번씩 출력한다. 문장을 겹치기 않게 하기 위헤 줄넘김해서
 									// 한다.
 
