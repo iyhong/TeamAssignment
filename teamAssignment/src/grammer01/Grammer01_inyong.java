@@ -1,6 +1,6 @@
 package grammer01;
 
-public class Grammer01 {
+public class Grammer01_inyong {
 	public static void main(String[] args) {
 		final int SUN = 1;
 		final int MON = 2;
@@ -14,12 +14,16 @@ public class Grammer01 {
 		int end = 31;
 		int startWeek = THU;
 		System.out.println(" SU MO TU WE TH FR SA");
-	/*	for (int i = 1; i < 여기; i++) {
+		//앞에 공백은 시작일 전까지 즉 THU=5이므로 4번 공백찍으면 됨.
+		for (int i = 1; i < startWeek; i++) {
 			System.out.print("   "); // "공백3칸"
 		}
-		for (int i = 여기, n = 여기; i <= 여기; i++, n++) {
+		//i가 1부터 31까지 반복하고
+		for (int i = start, n = startWeek; i <= end; i++, n++) {
+			//삼항연산자 ? 를 사용해서 자리수가 한자리면 앞에 공백과0을 붙여주고 두자리만 공백만 붙여줌 
 			System.out.print((i < 10) ? " 0" + i : " " + i); // (i < 10)? "공백두칸"+i : "공백한칸"+i
-			if (여기 == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
+			//만약 n즉 startWeek이 7로나누어 떨어지면 줄바꿈실행
+			if (n%7 == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
 				System.out.println();
 		}
 		
@@ -36,4 +40,5 @@ public class Grammer01 {
 
 		*/
 	}
+
 }
