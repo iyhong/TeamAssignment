@@ -9,7 +9,7 @@ public class Question01_myungchul {
 				// y<x+1 x에 0~4까지 대입을 하게 되고 점점 출력할 문자열이 증가한다.
 				System.out.print("*");
 			}
-			System.out.println("\n");// x가 0~4 한번씩 출력한다. 문장을 겹치기 않게 하기 위헤 줄넘김해서
+			System.out.print("\n");// x가 0~4 한번씩 출력한다. 문장을 겹치기 않게 하기 위헤 줄넘김해서
 										// 한다.
 
 		}

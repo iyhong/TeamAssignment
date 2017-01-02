@@ -14,8 +14,8 @@ public class Question05_sangil {
 		int x = 65; //"A"의 아스키 코드값 
 		for(int i = 0;i<5;i++){
 			for(int j=0;j<i+1;j++){
-				System.out.print(Character.toString((char)x));
 				x++;
+				System.out.print(Character.toString((char)x));
 			}
 			System.out.print("\n");
 		}
