@@ -14,14 +14,7 @@ public class Grammer01 {
 		int end = 31;
 		int startWeek = THU;
 		System.out.println(" SU MO TU WE TH FR SA");
-		for (int i = 1; i < 여기; i++) {
-			System.out.print("   "); // "공백3칸"
-		}
-		for (int i = 여기, n = 여기; i <= 여기; i++, n++) {
-			System.out.print((i < 10) ? " 0" + i : " " + i); // (i < 10)? "공백두칸"+i : "공백한칸"+i
-			if (여기 == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
-				System.out.println();
-		}
+		
 		/*
 		 * [여기] 부분채워서 아래같이 출력하기
 		 * 설명주석도 달아오기

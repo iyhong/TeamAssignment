@@ -26,6 +26,7 @@ public class Grammer01_sangil {
 			if ((i+n)%7 == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
 				System.out.println();
 		}
+		
 		/*
 		 * [여기] 부분채워서 아래같이 출력하기
 		 * 설명주석도 달아오기
