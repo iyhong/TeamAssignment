@@ -1,6 +1,6 @@
 package grammer01;
 
-public class Grammer01 {
+public class Grammer01_choiym {
 	public static void main(String[] args) {
 		final int SUN = 1;
 		final int MON = 2;
@@ -14,16 +14,21 @@ public class Grammer01 {
 		int end = 31;
 		int startWeek = THU;
 		System.out.println(" SU MO TU WE TH FR SA");
-	/*	for (int i = 1; i < 여기; i++) {
+		for (int i = 1; i < 5; i++) {
 			System.out.print("   "); // "공백3칸"
+			// 요일 하나당 3칸씩 할당되므로 TH까지 4일이 필요함. for문 4번반복필요함. 때문에 여기->5 대입
 		}
-		for (int i = 여기, n = 여기; i <= 여기; i++, n++) {
+		for (int i = 1, n = 5 ; i <= 31; i++, n++) {
 			System.out.print((i < 10) ? " 0" + i : " " + i); // (i < 10)? "공백두칸"+i : "공백한칸"+i
-			if (여기 == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
+			/* 삼향연산자 ? 는 ()안의 값이 참이면 : 왼쪽 참이아니면 : 오른쪽이 실행됨
+				31일까지이므로 i <= 31까지
+			*/
+			
+			if ((n%7) == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
 				System.out.println();
 		}
 		
-		 * [여기] 부분채워서 아래같이 출력하기
+		/* * [여기] 부분채워서 아래같이 출력하기
 		 * 설명주석도 달아오기
 		 
 		SU MO TU WE TH FR SA
