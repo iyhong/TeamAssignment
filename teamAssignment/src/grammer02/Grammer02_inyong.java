@@ -1,6 +1,6 @@
 package grammer02;
 
-public class Grammer02 {
+public class Grammer02_inyong {
 	/*
 	다음은 행렬 곱셈을 구현한 코드
 	다음 프로그램 컴파일과 실행시 출력되는 결과는?
@@ -8,13 +8,22 @@ public class Grammer02 {
 	*/
 	public static void main(String[] args) {
 		int x[][] = { { 3, 2, 3 }, { 5, 9, 8 } };
+		/*
+			x =  3, 2, 3
+				 5, 9, 8
+		*/
 		int y[][] = { { 4, 7 }, { 9, 3 }, { 8, 1 } };
-		int z[][] = Matrix.multiply(x, y);
-		Matrix.print(z);
+		/*
+			y = 4, 7
+				9, 3
+				8, 1
+		*/
+		int z[][] = MatrixInyong.multiply(x, y);
+		MatrixInyong.print(z);
 	}
 }
 
-class Matrix {
+class MatrixInyong {
 	public static int[][] multiply(int[][] m1, int[][] m2) {
 		int m1Rows = m1.length;
 		int m1Cols = m1[0].length;
