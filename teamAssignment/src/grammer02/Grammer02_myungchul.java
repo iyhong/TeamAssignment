@@ -24,7 +24,7 @@ class Matrix01 {
 		int m2Rows = m2.length;		//3
 		int m2Cols = m2[0].length;	//2
 
-		if (m1Cols != m2Rows) {
+		if (m1Cols != m2Rows) {//m1Cols=3와 m2Rows=3은 같으면 예외처리가 발생 하지 않는다. 둘중 하나라도 다른 경우 예외처리가 발생한다.
 			throw new IllegalArgumentException();
 			//상세한 메시지가 없는 IllegalArgumentException을 구성
 		}
@@ -72,8 +72,7 @@ class Matrix01 {
 			for (int j = 0; j < cols; j++) {
 				//j=0 ; 0<2 ; 0++  /  j=1 ; 1<2 ; 1++
 				System.out.print(a[i][j] + ",");
-			}
-			
+			}			
 			System.out.println("}");
 		}
 	}
