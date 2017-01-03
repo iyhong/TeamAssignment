@@ -21,7 +21,7 @@ public class Grammer01_choiym {
 		}
 		int j = 4;
 		for (int i = 1, n = 5; i <= 31; i++, n++) {
-			int[] a = { 4, 11, 18, 25 };
+			
 			// for(int j = 0; j < a.length; j++){
 			if (i == j) {
 				System.out.print((i < 10) ? "0" + i : i);
@@ -30,6 +30,7 @@ public class Grammer01_choiym {
 				//System.out.println("j : "+j);
 				//System.out.println("씨;뱌ㅏㄹ");
 				System.out.print((i < 10) ? " 0" + i : " " + i);
+
 			}
 			// (i < 10)? "공백두칸"+i : "공백한칸"+i
 			/*
