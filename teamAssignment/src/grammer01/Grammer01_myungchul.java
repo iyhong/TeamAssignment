@@ -12,11 +12,11 @@ public class Grammer01_myungchul {
 
 		int start = 1;
 		int end = 31;
-		int startWeek = THU;
+		int startWeek = TUE;
 		System.out.println("SU MO TU WE TH FR SA");
 		for (int i = 1; i < startWeek; i++) {//i은 1이면 ; i은 startWeek 보다 작다 ; 점점 i는 증가한다.
 			//일요일 앞에 공백을 없애기 위해 if문으로 추가를 하면 된다.
-			if((i%7) ==4){//나머지가 4일때 true일때 공백 두칸으로 표시를 한다.
+			if((i%7) ==1){//나머지가 4일때 true일때 공백 두칸으로 표시를 한다.
 				System.out.print("  ");// "공백2칸"
 			}else{//false일때 공백 3칸으로 표시를 한다.
 				System.out.print("   ");// "공백3칸"
@@ -28,7 +28,7 @@ public class Grammer01_myungchul {
 			//i는 1부터 시작하여 31까지 반복을 하게 된고,
 			//n은 startWeek=THU=5로서 점점 1씩 더해진다.
 			//01=5 02=6 03=7 04=8......이렇게 증가를 하게 된다.
-			if((i%7) == 4){
+			if((n%7) == 1){
 				System.out.print((i < 10) ? "0" + i : i);
 			}else{
 				System.out.print((i < 10) ? " 0" + i : " " + i); // (i < 10)? "공백두칸"+i : "공백한칸"+i
