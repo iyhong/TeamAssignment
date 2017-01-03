@@ -21,7 +21,7 @@ public class Grammer01_choiym {
 		}
 		for (int i = 1, n = 5 ; i <= 31; i++, n++) {
 			int[] a = {4,11,18,25};
-			for(int b = 0; b <= a.length; b++){
+			for(int b = 0; b < a.length; b++){
 				if(i==a[b]){
 					System.out.print((i < 10) ? "0" + i: i);
 				}else{
