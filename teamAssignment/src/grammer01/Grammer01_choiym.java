@@ -13,18 +13,26 @@ public class Grammer01_choiym {
 		int start = 1;
 		int end = 31;
 		int startWeek = THU;
-		System.out.println(" SU MO TU WE TH FR SA");
+		
+		System.out.println("SU MO TU WE TH FR SA");
 		for (int i = 1; i < 5; i++) {
 			System.out.print("   "); // "공백3칸"
 			// 요일 하나당 3칸씩 할당되므로 TH까지 4일이 필요함. for문 4번반복필요함. 때문에 여기->5 대입
 		}
 		for (int i = 1, n = 5 ; i <= 31; i++, n++) {
-			System.out.print((i < 10) ? " 0" + i : " " + i); // (i < 10)? "공백두칸"+i : "공백한칸"+i
-			/* 삼향연산자 ? 는 ()안의 값이 참이면 : 왼쪽 참이아니면 : 오른쪽이 실행됨
-				31일까지이므로 i <= 31까지
-				n값을 5로 주고 if문을 통해 n을 나눈 나머지가 0과 같으면 줄바꿈 실행
-			*/
-			
+			int[] a = {4,11,18,25};
+			for(int b = 0; b <= a.length; b++){
+				if(i==a[b]){
+					System.out.print((i < 10) ? "0" + i: i);
+				}else{
+				System.out.print((i < 10) ? " 0" + i:" "+i);
+				}
+				// (i < 10)? "공백두칸"+i : "공백한칸"+i
+				/* 삼향연산자 ? 는 ()안의 값이 참이면 : 왼쪽 참이아니면 : 오른쪽이 실행됨
+					31일까지이므로 i <= 31까지
+					n값을 5로 주고 if문을 통해 n을 나눈 나머지가 0과 같으면 줄바꿈 실행
+				*/
+			}
 			if ((n%7) == 0)	//이렇게하면 매주 토요일에는 줄바꿈이 실행됨
 				System.out.println();
 		}
