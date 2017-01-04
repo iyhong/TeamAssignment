@@ -1,5 +1,6 @@
 package grammer02;
 
+
 public class Grammer02_choiym {
 	/*
 	다음은 행렬 곱셈을 구현한 코드
@@ -7,12 +8,14 @@ public class Grammer02_choiym {
 	주석달아오기... 내일 설명해야함
 	*/
 	public static void main(String[] args) {
-		int x[][] = { { 3, 2, 3 }, { 5, 9, 8 } };
+		int x[][] = { { 3, 2, 3 },	
+					  { 5, 9, 8 } };
 		//2x3행렬 
-		int y[][] = { { 4, 7 }, { 9, 3 }, { 8, 1 } };
+		int y[][] = { { 4, 7 },
+					  { 9, 3 },
+					  { 8, 1 } };
 		//3x2행렬
 		int z[][] = MatrixChoi.multiply(x, y);
-		
 		//z는 return받은 result행렬을 가짐
 		MatrixChoi.print(z);
 	}

@@ -6,6 +6,7 @@ public class Grammer02_inyong {
 	다음 프로그램 컴파일과 실행시 출력되는 결과는?
 	주석달아오기... 내일 설명해야함
 	*/
+	int a[] = {1,2,3,4,5};
 	public static void main(String[] args) {
 		int x[][] = { { 3, 2, 3 }, { 5, 9, 8 } };
 		/*
