@@ -33,16 +33,27 @@ public class grammer03_choiym {
 		Iterator it = list.iterator();
 		//it변수에 list에 담겨있는 정보를 하나씩 가져옴
 		while (it.hasNext()) {
+			
 			System.out.print(it.next());
 			//it이 있으면 true, 없으면 false값을 받아옴
 			//따라서 0124679가 출력됨
 		}
 		System.out.println();
+		
+		Sort s = new Sort();
+		s.sort();
 		// Arrays.sort()를 사용하여 넘기는 배열을 정렬한 다음 set에 세팅
+		
+	}
+	
+}
+class Sort{
+	void sort(){
 		String[] arr1 = { "1", "2", "9", "7", "4", "6", "1", "7", "0" };
-		Arrays.sort(arr);
+		
+		Arrays.sort(arr1);
 		Set set1 = new HashSet();
-		for (String str : arr) {
+		for (String str : arr1) {
 			set1.add(str);
 		}
 		
@@ -53,5 +64,4 @@ public class grammer03_choiym {
 			System.out.print(it1.next());
 		}
 	}
-	
 }
