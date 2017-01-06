@@ -11,6 +11,7 @@ public class Grammer04_YJ {
 		t2.setX(10);
 		System.out.println(t1.getX());
 		System.out.println(t2.getX());
+		//TestYJ a = new TestYJ();
 	}
 }
 

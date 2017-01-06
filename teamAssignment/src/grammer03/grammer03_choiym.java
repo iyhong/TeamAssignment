@@ -57,6 +57,16 @@ class Sort{
 			set1.add(str);
 		}
 		
+		HashSet<String> set3 = new HashSet<String>();
+		set3.add("1.1");
+		set3.add("4.3");
+		set3.add("2.2");
+		set3.add("8.7");
+		Iterator it2 = set3.iterator();
+		while (it2.hasNext()) {
+			System.out.println(it2.next());
+		}
+		System.out.println();
 		List list1 = new LinkedList(set1);
 		Iterator it1 = list1.iterator();
 		
