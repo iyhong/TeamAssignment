@@ -5,8 +5,8 @@ package grammer04;
 //주석달기
 public class Grammer04_YJ {
 	public static void main(String[] args) {		
-		Test t1 = Test.getInstance();		//getInstance()메소드는 하나의 인스턴스만 가지고 공유하기때 문에
-		Test t2 = Test.getInstance();		//t1, t2에 값이 다르게 담겨있어도 t2.setX(10)의 값만 받는다 
+		TestYJ t1 = TestYJ.getInstance();		//getInstance()메소드는 하나의 인스턴스만 가지고 공유하기때 문에
+		TestYJ t2 = TestYJ.getInstance();		//t1, t2에 값이 다르게 담겨있어도 t2.setX(10)의 값만 받는다 
 		t1.setX(5);							//그러므로 10, 10 이출력된다
 		t2.setX(10);
 		System.out.println(t1.getX());
@@ -14,16 +14,16 @@ public class Grammer04_YJ {
 	}
 }
 
-class Test {
-	private static Test t;
+class TestYJ {
+	private static TestYJ t;
 	private int x;
 
-	private Test() {
+	private TestYJ() {
 	}
 
-	public static Test getInstance() {
+	public static TestYJ getInstance() {
 		if (t == null) {
-			t = new Test();
+			t = new TestYJ();
 		}
 		return t;
 	}

@@ -5,8 +5,8 @@ package grammer04;
 //주석달기
 public class Grammer04_choiym {
 	public static void main(String[] args) {
-		Test t1 = Test.getInstance();
-		Test t2 = Test.getInstance();
+		TestChoiym t1 = TestChoiym.getInstance();
+		TestChoiym t2 = TestChoiym.getInstance();
 		t1.setX(5);
 		t2.setX(10);
 		System.out.println(t1.getX());
@@ -16,16 +16,16 @@ public class Grammer04_choiym {
 	}
 }
 // 
-class Test {
-	private static Test t;
+class TestChoiym {
+	private static TestChoiym t;
 	private int x;
 
-	private Test() {
+	private TestChoiym() {
 	}
 
-	public static Test getInstance() {
+	public static TestChoiym getInstance() {
 		if (t == null) {
-			t = new Test();
+			t = new TestChoiym();
 		}
 		return t;
 	}
