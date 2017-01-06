@@ -1,4 +1,4 @@
-package grammer02;
+package grammer.no02;
 
 
 public class Grammer02_choiym {

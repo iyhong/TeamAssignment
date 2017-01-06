@@ -1,4 +1,4 @@
-package grammer04;
+package grammer.no04;
 
 public class Grammer04_inyong {
 	public static void main(String[] args) {

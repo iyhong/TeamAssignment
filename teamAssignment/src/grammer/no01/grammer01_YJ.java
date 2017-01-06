@@ -1,4 +1,4 @@
-package grammer01;
+package grammer.no01;
 
 public class grammer01_YJ {
 	public static void main(String[] args) {
