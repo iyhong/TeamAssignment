@@ -3,9 +3,13 @@ package grammer.no05;
 public class Grammer05_choiym {
 	public static void main(String[] args) {
 		Template_ym t = new Test_ym();
-	/*	Template_ym 클래스타입의 객체참조변수 t를 선언하고 new 연산자를 통해 생성된 
-		Test_ym인스턴스의 주소값을 객체참조변수 t에 할당한다.
-*/		t.play();
+		/*Template_ym 클래스타입의 객체참조변수 t를 선언하고 new 연산자를 통해 생성된 
+		Test_ym인스턴스의 주소값을 객체참조변수 t에 할당한다.*/
+		
+		//Template_ym t1 = new Template_ym();
+		//Template_ym은 추상클래스이기때문에 객체화 할 수 없다.
+		
+		t.play();
 		/*t의 주소값에 있는 인스턴스인 Test_ym의 play()를 호출한다.
 		그러면 t.play는 first와 second, third 메소드를 각기 호출하는데
 		first와 second는 오버라이드 되어있으므로 first, second 그리고 부모타입인 Template_ym이
