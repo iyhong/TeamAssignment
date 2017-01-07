@@ -13,8 +13,8 @@ public class Grammer05_choiym {
 		/*t의 주소값에 있는 인스턴스인 Test_ym의 play()를 호출한다.
 		그러면 t.play는 first와 second, third 메소드를 각기 호출하는데
 		first와 second는 오버라이드 되어있으므로 first, second 그리고 부모타입인 Template_ym이
-		원래 가지고있던 third()에 third문자열이 콘솔창에 출력된다.
-*/	}
+		원래 가지고있던 third()에 third문자열이 콘솔창에 출력된다.*/
+	}
 }
 
 abstract class Template_ym {
@@ -50,5 +50,13 @@ class Test_ym extends Template_ym {
 		//부모타입인 Templayte_ym이 가지고있던 second()를 호출하면 second문자열을 출력하도록 오버라이드 한다.
 		System.out.println("second");
 	}
-
+/*	@Override
+	void third() {
+	//third는 final 선언이 되어있어 오버라이드 할 수 없다.
+		super.third();
+		//상속받은 부모의 third()를 호출
+		System.out.println("Override third");
+		//Override third문자열을 콘솔에 출력
+	}
+*/
 }
