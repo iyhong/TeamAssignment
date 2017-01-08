@@ -14,16 +14,16 @@ public class grammer03 {
 		다른방법으로 정렬하는 메서드 하나 만들어오기
 	*/
 	public static void main(String[] args) {
-		String[] arr = { "1", "2", "9", "7", "4", "6", "1", "7", "0" };
+		String[] arr = { "1", "2", "9", "7", "4", "6", "1", "7", "0" }; 
 		Set set = new HashSet();
 		for (String s : arr) {
-			set.add(s);
+			set.add(s); 
 		}
 
-		List list = new LinkedList(set);
-		Collections.sort(list);
+		List list = new LinkedList(set); 
+		Collections.sort(list); 
 
-		Iterator it = list.iterator();
+		Iterator it = list.iterator(); 
 
 		while (it.hasNext()) {
 			System.out.print(it.next());
