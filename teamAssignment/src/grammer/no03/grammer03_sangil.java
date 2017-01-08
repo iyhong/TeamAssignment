@@ -1,4 +1,4 @@
-package grammer03;
+package grammer.no03;
 
 import java.util.Collections;
 import java.util.HashSet;
