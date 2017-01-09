@@ -29,7 +29,7 @@ class Ship extends Elect {
 
 class Robot extends Elect implements Testable {
 	void test(Testable t) {
-		if (t instanceof Elect) {
+		if (t instanceof Elect) { //instanceOf메서드는 t객체가 Elect를 참조할 수 있으면 true 없으면 false값을 리턴한다.
 			System.out.println("test하다");
 		}
 	}
