@@ -24,16 +24,16 @@ class Elect_cym {
 interface Testable_cym {
 }
 
-class Car_cym extends Elect implements Testable_cym {
+class Car_cym extends Elect_cym implements Testable_cym {
 	//Elect_cym을 상속받고 Testable_cym을 구현함
 	//int value를 상속받아 가지고있는상태 Testable_cym타입을 지니고 있는 상태
 }
 
-class Ship_cym extends Elect {
+class Ship_cym extends Elect_cym {
 	//Elect_cym을 상속받아 int value를 가지고있는상태
 }
 
-class Robot_cym extends Elect implements Testable_cym {
+class Robot_cym extends Elect_cym implements Testable_cym {
 	//Elect_cym을 상속받고 Testable_cym을 구현함
 	//int value를 상속받아 가지고있는상태 Testable_cym타입을 지니고 있는 상태
 	void test(Testable_cym t) {
