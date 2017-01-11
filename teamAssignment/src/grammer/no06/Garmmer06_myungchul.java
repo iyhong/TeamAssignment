@@ -5,9 +5,9 @@ package grammer.no06;
 
 public class Garmmer06_myungchul {
 	public static void main(String[] args) {
-		Car c = new Car();
-		Ship s = new Ship();
-		Robot r = new Robot();
+		Car_MCL c = new Car_MCL();
+		Ship_MCL s = new Ship_MCL();
+		Robot_MCL r = new Robot_MCL();
 		r.test(c);
 		r.test(s);
 		r.test(r);
@@ -22,22 +22,22 @@ public class Garmmer06_myungchul {
 	}
 }
 
-class Elect {
+class Elect_MCL {
 	int value;
 }
 
-interface Testable {
+interface Testable_MCL {
 }
 
-class Car extends Elect implements Testable {
+class Car_MCL extends Elect_MCL implements Testable_MCL {
 }
 
-class Ship extends Elect implements Testable{
+class Ship_MCL extends Elect_MCL implements Testable_MCL{
 }
 
-class Robot extends Elect implements Testable {
-	void test(Testable t) {
-		if (t instanceof Elect) {//instanceof 연산자는 왼쪽이 오른쪽에 오는 클래스가 객체이거나 하위클래스의 객체일경우
+class Robot_MCL extends Elect_MCL implements Testable_MCL {
+	void test(Testable_MCL t) {
+		if (t instanceof Elect_MCL) {//instanceof 연산자는 왼쪽이 오른쪽에 오는 클래스가 객체이거나 하위클래스의 객체일경우
 								//true로 반환을 한다고 한다. 그렇지 않을 경우 false로 반환을 하구요.
 			System.out.println("test하다");
 		}
