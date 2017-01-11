@@ -35,5 +35,11 @@ public class Grammer07_sangil {
 		System.out.println("4번 :"+d2.equals(d3));  //d2와 d3는 같은 시간값을 가지고 있기 때문에 true
 		System.out.println("5번 :"+d1.equals(d4)); //Date클래스를 이용하여 d1과 d4객체를 생성한 후 현재 시간값을 넣어주었다. 먼저 생성된 d1과 그 후에 생성된 d4는 
 												  //아주 미세한 시간 차이가 있다. 따라서 값이 다르므로 false
+		Member m1 = new Member();
+		Member m2 = new Member();
+		System.out.println(m1.equals(m2));
 	}
+}
+class Member{
+	
 }
