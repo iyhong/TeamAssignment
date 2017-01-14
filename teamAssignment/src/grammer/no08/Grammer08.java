@@ -5,7 +5,7 @@ public class Grammer08 {
 /*
  * 다음 프로그램중 컴파일시 에러가 발생하는 것은?
 	답 찾고 
-	모든 코드에 주석달아오기 오류가 나면 왜나는지 안나면 왜 안나는지?
+	이유 적기..
 ①
 class Parent {
  protected void test(int x) throws Exception{}
