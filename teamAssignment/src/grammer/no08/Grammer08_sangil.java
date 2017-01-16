@@ -1,7 +1,7 @@
 package grammer.no08;
 
 public class Grammer08_sangil {
-
+}
 
 /* 
  * 다음 프로그램중 컴파일시 에러가 발생하는 것은? 1번

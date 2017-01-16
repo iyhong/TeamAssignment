@@ -3,12 +3,27 @@ package grammer.no08;
 import java.io.*;
 
 public class Grammer08_inyong {
+	
+	public void a() throws IOException{
+		throw new IOException();
+	}
+	
 	public static void main(String[] args){
 		
 	
 	}
 }
 
+class A extends Grammer08_inyong{
+
+	@Override
+	public void a() throws IOException {
+		// TODO Auto-generated method stub
+		super.a();
+		//throw new Exception();
+	}
+	
+}
 /*
  *
  * 다음 프로그램중 컴파일시 에러가 발생하는 것은?
