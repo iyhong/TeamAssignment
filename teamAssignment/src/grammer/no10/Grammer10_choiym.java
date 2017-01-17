@@ -30,5 +30,24 @@ public class Grammer10_choiym {
 			// Queue에서 데이터를 꺼내온다.
 			//0/1/2 순서로 데이터를 꺼내옴
 		}
+		
+		System.out.println();
+		
+		Stack stack = new Stack();
+		stack.push("최");
+		stack.push("유");
+		stack.push("민");
+		//새로운 stack 객체 생성하고 data로 "최","유","민" 스택을 쌓는다
+		StringBuffer sb = new StringBuffer();
+		String name = "";
+		while(!stack.empty()){
+				name += stack.pop();
+			//민,유,최 를 불러와 name에 세팅
+		}
+		sb.append(name);
+		//StringBuffer클래스타입 변수 sb에 name을 세팅
+		System.out.println(sb.reverse());
+		//sb에 세팅된 민유최 를 reverse 시켜줌
+		
 	}
 }
