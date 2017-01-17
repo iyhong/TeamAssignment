@@ -7,6 +7,7 @@ import java.util.*;
 public class Grammer10_YJ {
 	public static void main(String[] args) {
 		Stack st = new Stack();
+		Stack st1 = new Stack();
 		Queue q = new LinkedList();
 
 		st.push("0");
@@ -20,7 +21,19 @@ public class Grammer10_YJ {
 		while (!q.isEmpty()) {
 			System.out.print(q.poll());
 		}
+		st.push("안");
+		st.push("녕");
+		st.push("하");
+		st.push("세");
+		st.push("요");
+		while(!st.empty()){
+			st1.push(st.pop());
+		}
+		while(!st1.empty()){
+			System.out.print(st1.pop());
+		}
 	}
+	
 }
 
 /*	 Stack 안에 push로 값을 집어 넣게되면 
@@ -41,3 +54,4 @@ public class Grammer10_YJ {
  	 
  	 
  */
+	
