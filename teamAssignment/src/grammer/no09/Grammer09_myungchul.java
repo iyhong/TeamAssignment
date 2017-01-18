@@ -39,15 +39,15 @@ public class First {
 검색을 해본 결과 first 클래스내에 있는 main 메서드 앞에 static때문에 발생한다고 한다.
 그러나 아래에 있는 문법으로 고치고 실행을 할려면
 내부클래스 앞에 static를 붙혀 줘야 test로 결과값이 출력이 된다.
-인스턴스를 생성하면, 각 인스턴스들은 서로 독립적기 때문에 서로 다른 값을 유지
-각인스턴스들이 공통적으로 같은값이 유지되어야 경우 static을 붙여야한다고 한다.
+static으로 지정되면 값을 공유하며 객체생성없이 접근이 가능하고 또한
+static으로 된 일반 멤버들은 그냥 가져다 쓸수 있지만 그렇지 않은 일반 멤버들은 객체를 생성해야만 쓸수 있다.
 
 
 public class First {
 	 public static void main(String[] args){
 		  new Second().test();
 		 }
-		 static class Second extends Grammer09_myungchul{
+		 static class Second extends First{
 		  void test(){
 		   System.out.println("test");
 		  }
