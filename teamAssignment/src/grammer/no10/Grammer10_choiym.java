@@ -30,5 +30,24 @@ public class Grammer10_choiym {
 			// Queue에서 데이터를 꺼내온다.
 			//0/1/2 순서로 데이터를 꺼내옴
 		}
+		
+		System.out.println();
+		
+		Stack stack = new Stack();
+		stack.push("최");
+		stack.push("유");
+		stack.push("민");
+		//새로운 stack 객체 생성하고 data로 "최","유","민" 스택을 쌓는다
+		Stack stack2 = new Stack();
+		while(!stack.empty()){
+			stack2.push(stack.pop());
+			//민,유,최 로 꺼내온 스택을 다시 새로운 스택에 쌓는다.
+		}
+		while(!stack2.empty()){
+		System.out.print(stack2.pop());
+		//새로 생성된 스택을 더이상 스택이없을때까지(스택이 -1이 될 때 까지) 꺼내온다.
+		}
+	
+		
 	}
 }

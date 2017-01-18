@@ -11,6 +11,7 @@ public class Grammer10 {
 		Queue q = new LinkedList();
 								   
 
+<<<<<<< HEAD
 		st.push("0"); 
 		st.push("1"); 
 		st.push("2"); 
@@ -20,6 +21,14 @@ public class Grammer10 {
 		while (!st.empty()) {			
 			System.out.print(st.pop()); 
 										
+=======
+		st.push("0");
+		st.push("1");
+		st.push("2");
+	
+		while (!st.empty()) {
+			System.out.print(st.pop());
+>>>>>>> branch 'master' of https://github.com/loverman85/TeamAssignment.git
 		}
 		System.out.print("/");
 		while (!q.isEmpty()) {			
@@ -28,3 +37,4 @@ public class Grammer10 {
 		}
 	}
 }
+
