@@ -21,5 +21,6 @@ public class Grammer10 {
 			System.out.print(q.poll());
 		}
 	}
+	
 }
 
