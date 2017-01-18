@@ -38,10 +38,14 @@ public class Grammer11_myungchul  extends B_lmc implements Testable_lmc {
 		
 	}
 }
-/*결과값
-Object
-Testable
-B*/
+/*
+ * 동적바인딩
+ * 프로그램 실행중 함수가 호출될때 그 메모리 참조를 알아내는것을 뜻한다고 한다.
+ * 메소드 오버로딩이나 오버라이딩 구현 개념이다. 메소드가 같은 이름이라도 리턴값에 따라 동적으로 호촐되어,
+ * 그 메소드를 참조해야 한다.
+ * 
+ * 
+ */
 
 interface Testable_lmc {}
 interface A_lmc{}
