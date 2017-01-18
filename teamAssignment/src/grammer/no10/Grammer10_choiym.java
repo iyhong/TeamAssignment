@@ -38,16 +38,16 @@ public class Grammer10_choiym {
 		stack.push("유");
 		stack.push("민");
 		//새로운 stack 객체 생성하고 data로 "최","유","민" 스택을 쌓는다
-		StringBuffer sb = new StringBuffer();
-		String name = "";
+		Stack stack2 = new Stack();
 		while(!stack.empty()){
-				name += stack.pop();
-			//민,유,최 를 불러와 name에 세팅
+			stack2.push(stack.pop());
+			//민,유,최 로 꺼내온 스택을 다시 새로운 스택에 쌓는다.
 		}
-		sb.append(name);
-		//StringBuffer클래스타입 변수 sb에 name을 세팅
-		System.out.println(sb.reverse());
-		//sb에 세팅된 민유최 를 reverse 시켜줌
+		while(!stack2.empty()){
+		System.out.print(stack2.pop());
+		//새로 생성된 스택을 더이상 스택이없을때까지(스택이 -1이 될 때 까지) 꺼내온다.
+		}
+	
 		
 	}
 }
