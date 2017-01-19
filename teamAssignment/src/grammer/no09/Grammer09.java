@@ -1,7 +1,7 @@
 package grammer.no09;
 
 public class Grammer09 {
-
+	protected void abc(){}
 }
 /*
  각번호별 출력되는 결과와 그이유를 써오세용~
