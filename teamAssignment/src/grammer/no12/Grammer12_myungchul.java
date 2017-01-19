@@ -2,7 +2,7 @@ package grammer.no12;
 //다음 프로그램 컴파일과 실행시 출력되는 결과는?
 //그 이유는?
 
-public class Grammer12_myungchul{
+public class Grammer12_myungchul implements Cloneable {
 	int x;
 	int y;
 	//Grammer12_myungchul메서드 안에 this.x / this.y가 있고 toString()이동하여
@@ -20,7 +20,7 @@ public class Grammer12_myungchul{
 		Object obj=null;//obj변수에 null로 선언한다.
 		try {
 			obj = clone();	//clone() 메소드를 호출하여 완전한 객체 구조를 복사하다.
-
+			
 		} catch (CloneNotSupportedException e) {
 			
 		}
@@ -40,7 +40,7 @@ public class Grammer12_myungchul{
 		//얕은 복사는 표면에 있는 주소값만 복사를 해서 내용물을 복사를 하지 못해서
 		//null로 나온것이다.
 		//깊은 복사(deep copy)은 주소값과 내용물까지 복사를 한다.
-		
+		//사용하기 위해서 toString받기 위해서 implements Cloneable 작성해 줘야 한다.
 		System.out.println(original);
 		System.out.println(copy);
 		
