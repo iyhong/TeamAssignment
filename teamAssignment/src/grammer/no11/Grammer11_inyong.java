@@ -19,7 +19,7 @@ package grammer.no11;
 	동적바인딩은 런타임시점에 바인딩이 되는것이고
 	정적바인딩은 컴파일시점에 바인딩이 되는것이다.
  */	
-public class Grammer11_inyong  extends B1 implements Testable1 {
+public class Grammer11_inyong  extends C11 implements Testable11 {
 	public static void main(String[] args) {
 		Grammer11_inyong oop = new Grammer11_inyong();
 		//instanceof Object 결과 true 모든객체는 Object를 상속
@@ -27,28 +27,32 @@ public class Grammer11_inyong  extends B1 implements Testable1 {
 			System.out.println("Object");
 		}
 		//instanceof Testable1 결과 true Testable1을 구현하였기때문
-		if (oop instanceof Testable1) {
+		if (oop instanceof Testable11) {
 			System.out.println("Testable");
 		}
 		//instanceof A1 결과 false A1을 구현하지 않았기때문에
-		if (oop instanceof A1) {
+		if (oop instanceof A11) {
 			System.out.println("A");
 		}
 		//instanceof B1 결과 true B1을 상속했기문에
-		if (oop instanceof B1) {
+		if (oop instanceof B11) {
 			System.out.println("B");
 		}
 		//instanceof C1 가 컴파일 에러나는 이유는...extends 는 하나밖에 할수없으니..
 		//B를 이미 상속받았으니까...? 라고 추측해본다ㅠㅠ
-		/*if (oop instanceof C1) {
+		if (oop instanceof C11) {
 			System.out.println("C");
-		}*/
+		}
+		if (oop instanceof D11) {
+			System.out.println("D");
+		}
 	}
 }
 
-interface Testable1 {}
-interface A1{}
-class B1{}
-class C1{}
+interface Testable11 {}
+interface A11{}
+class B11{}
+class C11 extends B11{}
+class D11{}
 
 
