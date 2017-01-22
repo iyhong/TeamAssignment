@@ -23,7 +23,8 @@ public class Grammer12_inyong extends Grammer09{
 	public void setY(int y) {
 		this.y = y;
 	}
-
+	Grammer12_inyong() {
+	}
 	Grammer12_inyong(int x, int y) {
 		this.x = x;
 		this.y = y;
@@ -38,6 +39,7 @@ public class Grammer12_inyong extends Grammer09{
 		try {
 			obj = clone();
 		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
 		}
 		return (Grammer12_inyong) obj;
 	}
@@ -46,17 +48,21 @@ public class Grammer12_inyong extends Grammer09{
 		Grammer12_inyong original = new Grammer12_inyong(3, 5);
 		Grammer12_inyong copy = original.copy();
 		original.setX(10);
-		System.out.println(original);
+		Integer a = 1;
+		System.out.println(a.toString());
+		System.out.println(original.toString());
 		System.out.println(copy);
-		Grammer09 g09 = new Grammer09();
-		g09.abc();
+		Grammer12_inyong g12 = new Grammer12_inyong();
+		g12.abc();
+		
+		
 		try {
 			Grammer12_inyong clone = (Grammer12_inyong) original.clone();
 			clone.setY(10);
 			System.out.println(clone);
 		} catch (CloneNotSupportedException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 }
