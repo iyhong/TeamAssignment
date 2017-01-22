@@ -4,7 +4,7 @@ package grammer.no12;
 //clone 메서드를 사용하려면 Cloneable 을 구현해야한다..
 import grammer.no09.Grammer09;
 
-public class Grammer12_inyong extends Grammer09 implements Cloneable{
+public class Grammer12_inyong extends Grammer09{
 	int x;
 	int y;
 
