@@ -10,7 +10,7 @@ public class Grammer13 {
 	static void test() {
 		try {
 			System.out.println("try");
-			System.exit(0);
+		
 			throw new Exception();
 		} catch (Exception e) {
 			System.out.println("catch");
