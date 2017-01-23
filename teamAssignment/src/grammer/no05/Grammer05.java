@@ -6,6 +6,7 @@ package grammer.no05;
 public class Grammer05 {
 	public static void main(String[] args) {
 		Template t = new Test();
+		//
 		Template t1 = new Template();
 		t.play();
 	}

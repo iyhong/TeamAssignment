@@ -2,6 +2,7 @@ package grammer.no11;
 /*
 	다음 프로그램 컴파일과 실행시 출력되는 결과와 이유?
 	동적바인딩이 무엇인지?
+	동적바인딩은 
 */
 public class Grammer11_YJ  extends B1 implements Testable1 {
 	public static void main(String[] args) {

@@ -9,7 +9,7 @@ public class Garmmer06 {
 		Ship s = new Ship();
 		Robot r = new Robot();
 		r.test(c);
-		r.test(s);
+		r.test(s);	//
 		r.test(r);
 	}
 }
@@ -22,14 +22,19 @@ interface Testable {
 }
 
 class Car extends Elect implements Testable {
-}
-
+}	//Car 는 Elect를 상속받고 Testable(인터페이스)을 구현한다.
+	//int value;를 가지고있다.
 class Ship extends Elect {
+	//Ship 는 Elect 를 상속한다.
+	//int value; 를 가지고있다
 }
 
 class Robot extends Elect implements Testable {
+	//Robot은 Elect 를 상속받고 , Testable(인터페이스)를 구현한다.
 	void test(Testable t) {
 		if (t instanceof Elect) { //instanceOf메서드는 t객체가 Elect를 참조할 수 있으면 true 없으면 false값을 리턴한다.
+			//
+			//
 			System.out.println("test하다");
 		}
 	}
