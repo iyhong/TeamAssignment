@@ -12,6 +12,9 @@ public class Grammer13 {
 	static void test() {
 		try {
 			System.out.println("try");
+<<<<<<< HEAD
+		
+=======
 			//main()메서드를 종료시키는 명령어
 			//return과는 좀 다르다 return은 자신메서드만 종료
 			//그런데 try절에서는 return을 시키더라도 finally가 있다면
@@ -21,6 +24,7 @@ public class Grammer13 {
 			if(a){
 				return;
 			}
+>>>>>>> branch 'master' of https://github.com/loverman85/TeamAssignment
 			throw new Exception();
 		} catch (Exception e) {
 			System.out.println("catch");
