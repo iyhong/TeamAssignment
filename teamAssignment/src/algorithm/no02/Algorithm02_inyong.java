@@ -16,9 +16,31 @@ ex)
 		0부터 입력받은 숫자까지 Armstrong number 의 합을 구해 출력하세요
 */
 public class Algorithm02_inyong {
+	public static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
+		question1();
+		question2();
+		
+	}
+	public static void question2(){
+		int num = sc.nextInt();
+		int sum = 0;
+		for(int i = 0;i<num;i++){
+			int temp = i;
+			int result = 0;
+			while(temp>0){
+				int value = temp%10;
+				result += Math.pow(value, 3);
+				temp /= 10;
+			}
+			if(i == result){
+				sum += i;
+			}
+		}
+		System.out.printf("%d부터 %d까지의 Armstrong Number들의 합은 %d입니다.", 0,num,sum);
+	}
+	public static void question1(){
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -34,9 +56,13 @@ public class Algorithm02_inyong {
 				list.add(i);
 			}
 		}
+		System.out.printf("%d부터 %d사이의 Armstrong Number는 ",num1,num2);
 		for(int i=0;i<list.size();i++){
-			System.out.println(list.get(i));
+			System.out.print(list.get(i));
+			if(i!=list.size()-1){
+				System.out.print(",");
+			}
 		}
-		
+		System.out.println("입니다.");
 	}
 }
