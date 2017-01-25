@@ -1,5 +1,7 @@
 package forTest.no11;
 
+import java.util.Scanner;
+
 public class Question11 {
 /*
  * 01 02 03 04 05 
@@ -10,9 +12,7 @@ public class Question11 {
  * 
  * 만들어 주세요
  * */
-
 	public static void main(String[] args){
-		
 		
 	}
 }
