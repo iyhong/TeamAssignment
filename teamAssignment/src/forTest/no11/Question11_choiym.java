@@ -18,8 +18,6 @@ public class Question11_choiym {
 	
         int a[][]= new int[5][5];
         //5행 5열짜리 이중배열
-        
-        
     	int n;
     	//배열의 차수
         int row;
@@ -37,6 +35,8 @@ public class Question11_choiym {
             	//a[0][0]=1 , a[0][1]=2, a[0][2]=3, a[0][3]=4, a[0][4]=5
             	//n=3일때 k=1 3번 반복됨
             	//a[1][1]=17, a[1][2]=18, a[1][3]=19
+            	//n=1일때 k=2 1번 반복
+            	//a[2][2]=25
                 a[k][k+col]=i;
                 i++;
                
@@ -49,20 +49,22 @@ public class Question11_choiym {
             	//a[2][3]=20, a[3][3]= 21
                 a[k+row][5-k-1]=i;
                 i++;
-                System.out.println("2row값 확인 : "+row);
+               
             }
             for(col=1;col<n;col++){
             	//n=5일때 4번 반복됨
             	//a[4][3]=10, a[4][2]=11, a[4][1]=12, a[4][0]=13
             	//n=3일때 k=1 2번 반복됨
-            	//a[1+3-1=3][5-1-1-1=2]
+            	//a[3][2]=22, a[3][1]=23
                 a[k+row-1][5-k-col-1]=i;
-                System.out.println("3row값 확인 : "+row);
+              
                 i++;
             }
             for(col=1;col<n-1;col++){
             	//n=5일때 3번 반복됨
             	//a[3][0]=14, a[2][0]=15, a[1][0]=16
+            	//n=3일때 k=1 1번 반복됨
+            	//a[3][1]=24
                 a[5-k-col-1][k]=i;
                 i++;
               
@@ -73,12 +75,17 @@ public class Question11_choiym {
         
         //출력
         for(row=0;row<5;row++){
+        	//5열을 만들어주는 for문
             for(col=0;col<5;col++){
+            	//5행을 만들어주는 for문
             	int x = a[row][col];
+            	//x에 a이중배열의 값을 가져온다.
             	if(x<10){
             		System.out.print("0"+x+" ");
+            		//만약 x의 값이 10보다 작으면 앞에 0을 붙여준다.
             	}else{
             		System.out.print(""+x+" ");
+            		//x가 10보다 작지않으면 그대로 출력한다.
             	}
             }
             System.out.println("");
