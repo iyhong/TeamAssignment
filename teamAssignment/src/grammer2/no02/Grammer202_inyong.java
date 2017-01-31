@@ -7,16 +7,26 @@ package grammer2.no02;
 	
 	그리고 각줄마다 주석을 달아 설명해보세요.
 */
-public class Grammer202 {
+public class Grammer202_inyong {
 	static int[] arNum = { 7, 9, 1, 4, 5 };
 
 	public static void main(String[] args) {
 		int out, in;
-		Grammer202 t = new Grammer202();
+		Grammer202_inyong t = new Grammer202_inyong();
 
 		for (out = arNum.length - 1; out > 0; out--) {
-			for (;;) { // 다음 for문을 완성하시오
+			for (in=0;in<out;in++) { // 다음 for문을 완성하시오
 				if (arNum[in] > arNum[in + 1]) {
+					t.swap(in, in + 1);
+				}
+			}
+		}
+		t.display();
+		System.out.println();
+		//반대로 정렬
+		for (out = arNum.length - 1; out > 0; out--) {
+			for (in=0;in<out;in++) { 
+				if (arNum[in] < arNum[in + 1]) {
 					t.swap(in, in + 1);
 				}
 			}
