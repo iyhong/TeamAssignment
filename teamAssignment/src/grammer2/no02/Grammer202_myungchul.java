@@ -11,8 +11,10 @@ public class Grammer202_myungchul {
 		Grammer202_myungchul t = new Grammer202_myungchul();
 
 		for (out = arNum.length - 1; out > 0; out--) {
-			for (in = 0; in < arNum.length - 1; in++) { // 다음 for문을 완성하시오
+			for (in = 0; in < out; in++) { // 다음 for문을 완성하시오
+				System.out.println(arNum[in]);
 				if (arNum[in] > arNum[in + 1]) {
+					
 					t.swap(in, in + 1);
 				}
 			}
