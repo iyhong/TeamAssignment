@@ -9,8 +9,9 @@ public class Grammer203_inyong {
 		int a = 20;
 		int b[] = { 100, 200, 300 };
 		String str = "team4";
+		StringBuffer strb = new StringBuffer("team4");
 		System.out.println("main의 str.hashCode:"+str.hashCode());
-		t.change(a, b, str);
+		t.change(a, b, str, strb);
 		//int a
 		//실행결과는 20/210/team4 이다.
 		//이유는 a는 primitive variable(기본데이터형) 이기 때문에 매개변수로 a가 전달될때
@@ -30,7 +31,7 @@ public class Grammer203_inyong {
 		//즉 main의 str변수는 똑같은 값을 참조하고있고, chage의 str변수는 처음에 main의 str과 같은곳을 참조햇지만,
 		//값이바뀌면서 새로운 참조값을 가지게 된다.
 		//그래서 참조변수임에도 불구하고 값이 바뀌지 않은것처럼 보인다.
-		t.display(a, b, str);
+		t.display(a, b, str, strb);
 		System.out.println();
 		String string1 = new String("abc");
 		String string2 = new String("abc");
@@ -39,16 +40,17 @@ public class Grammer203_inyong {
 		System.out.println(string1==string2);
 	}
 
-	void change(int a, int b[], String str) {
+	void change(int a, int b[], String str, StringBuffer strb) {
 		a += 10;
 		b[1] += 10;
 		System.out.println("chage의 str.hashCode(변경전):"+str.hashCode());
 		str += "bigtower";
 		System.out.println("chage의 str.hashCode(변경후):"+str.hashCode());
 		System.out.println(str);
+		strb.append("bigtower");
 	}
 
-	void display(int a, int b[], String str) {
-		System.out.print(a + "/" + b[1]+"/" +str);
+	void display(int a, int b[], String str, StringBuffer strb) {
+		System.out.print(a + "/" + b[1]+"/" +str+"/"+strb);
 	}
 }
