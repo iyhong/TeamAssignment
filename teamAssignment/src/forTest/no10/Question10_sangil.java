@@ -20,7 +20,7 @@ z
 */
 	
 	public static void main(String[] args){
-		String[] zeroday = {"z","e","r","o","d","a","y"};
+		String[] zeroday = {"z","e","r","o","d","a","y","a"};
 		//i=0; j=0
 		//i=1; j=0,1
 		//i=2; j=0,1,2

@@ -25,7 +25,7 @@ public class Algorithm02_myungchul {
 		int start = s.nextInt();
 		int end = s.nextInt();
 		
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		//ArrayList<Integer> list = new ArrayList<Integer>();
 		for (int i = start; i < end; i++) {
 			int temp=i;
 			int c = 0, a;
@@ -35,12 +35,13 @@ public class Algorithm02_myungchul {
 				temp = temp / 10;	
 			}
 			if (i == c) {
-				list.add(i);				
+				System.out.println(" Armstrong number : "+i);
+				//list.add(i);				
 			}			
 		}
-		for (int i = 0;i< list.size(); i++) {			
+	/*	for (int i = 0;i< list.size(); i++) {			
 			System.out.println(list.get(i));
-		}
+		}*/
 	}
 	
 	public static void myung02(){
