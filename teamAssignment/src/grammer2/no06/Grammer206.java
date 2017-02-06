@@ -17,6 +17,12 @@ public class Grammer206 {
 		System.out.println(parent.x);
 		System.out.println(parent.y);
 		System.out.println(parent.z);
+		System.out.println(child.a);
+		System.out.println(child.b);
+		System.out.println(child.c);
+		System.out.println(child.x);
+		System.out.println(child.y);
+		System.out.println(child.z);
 	}
 }
 
