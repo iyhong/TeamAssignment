@@ -18,7 +18,9 @@ public class Grammer201_inyong {
 	static FileInputStream fis = null;
 
 	public static void main(String[] args) {
+		System.out.println(path);
 		System.out.println(fileName);
+		System.out.println(System.getProperty("os.arch"));
 		try {
 			fis = new FileInputStream(fileName);
 			//이대로 실행하면 TA4ITWR 가 출력되는데 이유는
@@ -56,7 +58,7 @@ public class Grammer201_inyong {
 			//FileWriter 객체를 file 객체로 생성하면 team4.txt파일이 생성된다.
 			FileWriter fw = new FileWriter(file);
 			//생성된 파일에 해당 문자열을 버퍼에 쓴다
-			fw.write("we can do it");
+			fw.write("we can do it!!!");
 			//flush하면 버퍼에 쓰인 문자열을 한꺼번에 보낸다.
 			fw.flush();
 		} catch (IOException e) {

@@ -20,9 +20,12 @@ public class Grammer09_sangil {
 	 public static void main(String[] args){
 	  new Second().test();
 	 }
-	 class Second extends First{ //First클래스의 내부클래스이자 First를 상속받은 Second 클래스이다.
-	 							 //정확히는 모르겠으나 익명클래스이므로 클래스의 선언과 객체생성을 동시에 하는 일회성 클래스여서
-	 							  *  main 메서드에서 Second 객체를 생성후 test메서드를 호출할 수 없다. 
+	 class Second extends First{ //현재 상태는 컴파일 오류가 난다. Second를 객체화할 수 없다고 ...
+	 							   우선 외부클래스인 First 클래스를 객체화하고, 내부클래스를 객체화 해야 한다.
+	  							  First first = new First();
+	  							  * First.Second second = first.new Second();
+	  							  * second.test();
+	  							  * 이렇게 하면 실행된다.
 	  void test(){
 	   System.out.println("test"); 
 	  }
@@ -32,8 +35,8 @@ public class Grammer09_sangil {
 	//③
 	/*public class First {
 	 public static void main(String[] args){
-	  new First(){					//First 클래스의 객체를 생성한 후 
-	   void test(){					//객체가 test 메서드를 만들고 
+	  new First(){					//익명 클래스로  클래스의 선언과 동시에 객체를 생성하는 일회성 클래스이다.
+	   void test(){					// 객체를 생성하며 바로 메서드를 선언하고 호출하는 형태이다.
 	    System.out.println("test");
 	   }
 	  }.test();						//test메서드를 호출한다. 그러면 "test" 문자열이 출력된다.

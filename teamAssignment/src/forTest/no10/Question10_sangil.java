@@ -20,6 +20,7 @@ z
 */
 	
 	public static void main(String[] args){
+<<<<<<< HEAD
 		String[] zeroday = {"z","e","r","o","d","a","y"};
 		//i*(-1) 
 		//i=-6; j=0
@@ -31,6 +32,12 @@ z
 		//i=0; j=0,1,2,3,4,5,6
 		//i=1; j=0,1,2,3,4,5
 		//i=2; j=0,1,2,3,4
+=======
+		String[] zeroday = {"z","e","r","o","d","a","y","a"};
+		//i=0; j=0
+		//i=1; j=0,1
+		//i=2; j=0,1,2
+>>>>>>> branch 'master' of https://github.com/loverman85/TeamAssignment.git
 		//i=3; j=0,1,2,3
 		//i=4; j=0,1,2
 		//i=5; j=0,1
