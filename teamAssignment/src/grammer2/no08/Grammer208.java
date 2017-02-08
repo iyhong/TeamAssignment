@@ -1,7 +1,7 @@
 package grammer2.no08;
 /*
 	다음 자바 코드 실행시 출력되는 결과는?
-	
+	주석을 쓰시오!
 */
 
 public class Grammer208 {
