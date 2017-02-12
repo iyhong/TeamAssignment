@@ -23,8 +23,8 @@ public class Grammer207_YJ {
 		  singer.setAge(32);
 		  list.add(singer);
 		  //singer에 guest와 32를 셋팅하는데 
-		  //이 때 먼저 셋팅된 admin과 30이 덮어써지게 된다.
-		  //
+		  //이 때 또 다른 객체를 생성하여 guest 와 32를 담는게아닌
+		  //admin과 30에 값을 덮어쓰게된다.
 		  Iterator i=list.iterator();
 		  //Iterator는 ArrayList에 담긴 값들을 하나씩 추출할수 있게해준다.
 		  while(i.hasNext()){
