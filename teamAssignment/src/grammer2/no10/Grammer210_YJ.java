@@ -46,7 +46,7 @@ class Sub_YJ extends Super_YJ{
  * Sub_YJ 에 값을 셋팅 하고 Sub_YJ 클래스에서 받긴 하였지만 
  * Sub_YJ 가 상속받은 Super_YJ 클래스에 name,age 에 값이 셋팅 되지 않아서
  * NullPointerException이 나오게되는 것 같다.
- * name 에 str 값을 주거나 name 을 str로 바꾸면 실행된다.
+ * name 에 str 값을 주거나 name 을 str로 바꾸면 실행된다
  * 
  
  * */

@@ -28,7 +28,7 @@ public class Grammer207_YJ {
 		  Iterator i=list.iterator();
 		  //Iterator는 ArrayList에 담긴 값들을 하나씩 추출할수 있게해준다.
 		  while(i.hasNext()){
-			  //i.hasNext()를 통해 담긴 값들을 하나씩 추출
+			  //i.hasNext()를 통해 담긴 값들을 하나씩 추출  
 		   System.out.println((((Singer_yj)i.next()).getName()));
 		  }
 	}
