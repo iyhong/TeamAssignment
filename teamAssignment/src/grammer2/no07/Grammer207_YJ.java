@@ -19,7 +19,7 @@ public class Grammer207_YJ {
 		  singer.setAge(30);
 		  list.add(singer);
 		  //singer 에 admin , 30 을 셋팅한다
-		  singer.setName("guest");
+		  singer.setName("guest"); 
 		  singer.setAge(32);
 		  list.add(singer);
 		  //singer에 guest와 32를 셋팅하는데 
