@@ -20,33 +20,41 @@ z
 */
 	
 	public static void main(String[] args){
+<<<<<<< HEAD
+		String[] zeroday = {"z","e","r","o","d","a","y"};
+		//i*(-1) 
+		//i=-6; j=0
+		//i=-5; j=0,1
+		//i=-4; j=0,1,2
+		//i=-3; j=0,1,2,3
+		//i=-2; j=0,1,2,3,4
+		//i=-1; j=0,1,2,3,4,5
+		//i=0; j=0,1,2,3,4,5,6
+		//i=1; j=0,1,2,3,4,5
+		//i=2; j=0,1,2,3,4
+=======
 		String[] zeroday = {"z","e","r","o","d","a","y","a"};
 		//i=0; j=0
 		//i=1; j=0,1
 		//i=2; j=0,1,2
+>>>>>>> branch 'master' of https://github.com/loverman85/TeamAssignment.git
 		//i=3; j=0,1,2,3
-		//i=4; j=0,1,2,3,4
-		//i=5; j=0,1,2,3,4,5
-		//i=6; j=0,1,2,3,4,5,6
-		for(int i=0;i<7;i++){
-			for(int j=0;j<i+1;j++){ //zeroday배열을 0부터 i번째까지 하나씩 꺼내옴
+		//i=4; j=0,1,2
+		//i=5; j=0,1
+		//i=6; j=0
+		int init = -6;
+		//System.out.println(absNum);
+		
+		for(int i=init;i<7;i++){
+			int absNum = Math.abs(init);
+			for(int j=0;j<7-absNum;j++){ //zeroday배열을 0부터 i번째까지 하나씩 꺼내옴
+				//System.out.println(absNum);
 				System.out.print(zeroday[j]);
 			}
 			System.out.println();
+			init++;
 		}
 		
-		//i=0; j=0,1,2,3,4,5
-		//i=1; j=0,1,2,3,4
-		//i=2; j=0,1,2,3
-		//i=3; j=0,1,2
-		//i=4; j=0,1
-		//i=5; j=0
-		for(int i=0;i<6;i++){
-			for(int j=0;j<6-i;j++){
-				System.out.print(zeroday[j]);
-			}
-			System.out.println();
-		}
 	}
 	
 }
