@@ -18,9 +18,7 @@ public class Grammer11  extends B implements Testable {
 		if (oop instanceof B) {
 			System.out.println("B");
 		}
-		if (oop instanceof C) {
-			System.out.println("C");
-		}
+		
 	}
 }
 

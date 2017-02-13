@@ -61,6 +61,7 @@ public class Question11_sangil {
 		//출력하기
 		for(int i=0; i<arr.length;i++){
 			for(int j=0; j<arr[i].length;j++){
+				
 				System.out.printf("%2s ",arr[i][j]);
 			}
 			System.out.println();
