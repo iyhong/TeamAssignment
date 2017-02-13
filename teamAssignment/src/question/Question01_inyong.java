@@ -10,9 +10,10 @@ package question;
 			
 			정답 : 
 			a(x) -> 오버로딩은 매개변수갯수나 매개변수 타입이 달라야한다.
-			b(o)
-			c(x) -> 리턴타입이 다르면 안됨
-			d(x) -> 리턴타입이 다르면 안됨
+			b(o) -> 매개변수타입이 달라서 오버로딩
+			c(o) -> 리턴타입이 다른것만으론 오버로딩에 영향이없음, 매개변수타입이 달라서 오버로딩
+			d(o) -> 리턴타입이 다른것만으론 오버로딩에 영향이없음, 매개변수타입이 달라서 오버로딩
+			만약 리턴타입만 다르게 메서드를 만든다면 컴파일에러발생!!
 
 	
 		2.다음 중 초기화에 대한 설명으로 옳지 않은 것을 모두 고르고 이유를 설명해 주세요.
@@ -54,5 +55,14 @@ class TestClass1 {
 	TestClass1(int value) {
 		System.out.println("4.생성자 오버로딩");
 	}
+	
+	//오버로딩
+	long add(int a, int b){return a+b;}
+	//long add(int x, int y) { return x+y;}
+	long add(long a, long b) { return a+b;}
+	int add(byte a, byte b) { return a+b;}
+	int add(long a, int b) { return (int)(a+b);}
+	//int add(int a, int b){return a+b;}
 }
+
 
