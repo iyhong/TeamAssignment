@@ -19,6 +19,7 @@ public class Choiym_Grammer211 {
 			//i = 1 일때 actor1 클래스의 주소값을 참조하고 있으므로 actor1의 play와 display메소드 실행
 			//춤춘다
 			//연기한다 출력됨
+			//git에 올라갑니까??
 		}
 	}
 }
